@@ -2,5 +2,5 @@
 
 Initial Commits are following the contents of nomadcoders/nomadcoin
 
-##reference
+## reference
 https://github.com/nomadcoders/nomadcoin
