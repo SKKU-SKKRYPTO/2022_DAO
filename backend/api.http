@@ -1,0 +1,27 @@
+http://localhost:2000/
+###
+http://localhost:2000/status
+###
+http://localhost:2000/blocks
+###
+POST http://localhost:2000/blocks
+###
+POST http://localhost:2000/transactions
+
+{
+    "to":"terry",
+    "amount":10
+}
+###
+http://localhost:4000/mempool
+###
+http://localhost:4000/balance/lynn
+###
+POST http://localhost:3000/peers
+
+{
+    "address": "127.0.0.1",
+    "port": "2000"
+}
+###
+http://localhost:2000/peers
