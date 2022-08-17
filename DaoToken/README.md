@@ -1,20 +1,20 @@
-#Deploy Token Contracts for Dao
+# Deploy Token Contracts for Dao
 Using truffle, ganache, npm and Metamask
 
-##Install Ganache
+## Install Ganache
 npm install -g ganache -cli
 
-##Install truffle
+## Install truffle
 npm install -g truffle
 
 Have to get versions of Truffle, Ganache, Solidity, Node after enter `truffle version` in your terminal and successfully
 
 
-Requirements
+### Requirements
 +NodeJS v12 or later
 +Windows, Linux or Mac OS X
 
-###reference
+### reference
 https://trufflesuite.com/docs/truffle/getting-started/installation/
 
-##Deploy Contract
+## Deploy Contract
