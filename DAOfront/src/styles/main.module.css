@@ -1,0 +1,165 @@
+.small_h {
+    font-family: 'Audiowide';
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: calc(37vh - 90px);
+}
+
+.title {
+    font-family: 'Audiowide';
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.join_btn {
+    width: 170px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    font-family: 'Montserrat Light';
+    font-size: 1.3rem;
+}
+
+.menutitle {
+    font-size: 2rem;
+    font-family: 'Wallpoet';
+    color: white;
+    margin-top: 100px;
+}
+
+.acc_btn {
+    width: 160px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: 'Montserrat SemiBold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.acc_img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.line {
+    width: 85%;
+    height: 2px;
+    background-color: white;
+    margin-top: 45px;
+}
+
+.menu_item_wrapper {
+    font-family: 'Wallpoet';
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.menu_item {
+    margin-top: 20px;
+}
+
+.wrapper_for_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wallet_fir_box {
+    width: 400px;
+    height: 183px;
+    background: #293137;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet_sec_box {
+    width: 400px;
+    height: 183px;
+    background: #293137;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet_thr_box {
+    width: 400px;
+    height: 183px;
+    background: #293137;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.wallet_menu_wrapper {
+    width: 385px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.wallet_menu_wrapper:hover {
+    background-color: #121A1F;
+    ;
+}
+
+.wallet_menu_img {
+    width: 70px;
+    height: 70px;
+}
+
+.wallet_menu_big_text {
+    color: #c7c7c7;
+    font-family: 'SF UI Display Semibold';
+    font-size: 1.5rem;
+}
+
+.wallet_menu_small_text {
+    color: #888888;
+    font-family: 'SF UI Display Light';
+    font-size: 1rem;
+}
+
+.wallet_menu_cancel_img {
+    width: 25px;
+    height: 25px;
+    margin-top: 30px;
+}
