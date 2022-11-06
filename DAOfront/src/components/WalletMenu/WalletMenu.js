@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { metamaskImg, walletconnectImg, walletlinkImg, cancelImg2 } from '../../assets/images';
 import s from '../../styles/main.module.css';
+import Web3 from 'web3';
 
 const WalletMenu = ({isOpened, changeIsOpened}) => {
     const MenuWrapper = styled.div`
@@ -20,10 +21,27 @@ const WalletMenu = ({isOpened, changeIsOpened}) => {
         cursor: pointer;
     `;
 
+    //--------------------Wallet Connect Functions-----------------------//
+    // 1. Connect to metamask
+    async function connectToMetamask() {
+        if (window.ethereum) {
+           await window.ethereum.request({ method: "eth_requestAccounts" });
+           window.web3 = new Web3(window.ethereum);
+           const account = web3.eth.accounts;
+           //Get the current MetaMask selected/active wallet
+           const walletAddress = account.givenProvider.selectedAddress;
+           console.log(`Wallet Address: ${walletAddress}`);
+        
+        } else {
+            console.log("No wallet");
+        }
+    }
+    
+
     return (
         <>
             <MenuWrapper>
-                <div className={s.wallet_fir_box}>
+                <div className={s.wallet_fir_box} onClick={() => {connectToMetamask()}}>
                     <div class={s.wallet_menu_wrapper}>
                         <img src={metamaskImg} className={s.wallet_menu_img} />
                         <div className={s.wallet_menu_big_text}>MetaMask</div>
