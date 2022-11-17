@@ -30,7 +30,7 @@ const WalletMenu = ({isOpened, changeIsOpened}) => {
            const account = web3.eth.accounts;
            //Get the current MetaMask selected/active wallet
            const walletAddress = account.givenProvider.selectedAddress;
-           console.log(`Wallet Address: ${walletAddress}`);
+           console.log(`Wallet Address : ${walletAddress}`);
         
         } else {
             console.log("No wallet");

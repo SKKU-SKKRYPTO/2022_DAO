@@ -5,6 +5,7 @@ import MainFooter from '../components/MainFooter/MainFooter';
 import Menu from '../components/Menu';
 import WalletMenu from '../components/WalletMenu/WalletMenu';
 import s from '../styles/main.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
 
@@ -129,6 +130,13 @@ const fadeOut = keyframes`
         setIsWalletBoxOpen(!isWalletBoxOpen);
     }
 
+    // route to Sign up page
+    let navigate = useNavigate(); 
+    const routeSignUp = () =>{ 
+      let path = 'signup'; 
+      navigate(path);
+    }
+
     return (
         <>
             <WrapperWithBackground>
@@ -149,7 +157,7 @@ const fadeOut = keyframes`
                 <div className={s.small_h}>Decentralized Autonomous Organization</div>
                 <div class={s.title}>SKKRYPTO DAO</div>
                 <div className={s.btn_wrapper}>
-                    <div class={s.join_btn}>Join us!</div>
+                    <div class={s.join_btn} onClick={() => {routeSignUp()}}>Join us!</div>
                 </div>
             </WrapperWithBackground>
             <MainFooter />
