@@ -12,7 +12,7 @@ import twitIcon from "./twiticon.png";
 import facebookIcon from "./facebookicon.png";
 import youtubeIcon from "./youtubeicon.png";
 import githubIcon from "./githubicon.png";
-
+import LoginIcon from "./login.png";
 
 export {
     menuImg,
@@ -28,5 +28,6 @@ export {
     twitIcon,
     facebookIcon,
     youtubeIcon,
-    githubIcon
+    githubIcon,
+    LoginIcon
 }
