@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import { Main } from './pages';
+import { Main, Login } from './pages';
 import './styles/default.css';
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
 
